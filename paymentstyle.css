@@ -1,0 +1,112 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+/* Global styles */
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  min-height: 100vh;
+  background-image: url(images/pay.jpg);
+}
+
+/* Form styles */
+.container form {
+  padding: 30px;
+  width: 700px;
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Row and column layout */
+.container form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.container form .row .col {
+  flex: 1 1 250px;
+}
+
+/* Title styles */
+.container form .row .col .title {
+  font-size: 18px;
+  color: #333;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Input box styles */
+.container form .row .col .inputBox {
+  margin: 20px 0;
+}
+
+.container form .row .col .inputBox span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.container form .row .col .inputBox input {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.container form .row .col .inputBox input:focus {
+  border-color: #00509E;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 80, 158, 0.2);
+}
+
+/* Flex container styles */
+.container form .row .col .flex {
+  display: flex;
+  gap: 20px;
+}
+
+.container form .row .col .flex .inputBox {
+  margin-top: 10px;
+}
+
+/* Image styles inside input box */
+.container form .row .col .inputBox img {
+  height: 30px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+}
+
+/* Submit button styles */
+.container form .submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background: #00509E;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.container form .submit-btn:hover {
+  background: #004080;
+}
